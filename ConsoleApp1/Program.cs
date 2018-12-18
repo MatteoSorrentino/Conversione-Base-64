@@ -10,7 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string plainText = "Man";
+            string plainText = " ";
+            Console.WriteLine("inserisci la stringa da convertire in base 64");
+            plainText = Console.ReadLine(); ;
             string base64EncodedData;
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             for (int i = 0; i < plainTextBytes.Length; i++)
